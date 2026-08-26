@@ -68,6 +68,9 @@ button{font-family:inherit;cursor:pointer;background:none;border:none;color:inhe
 .mobile-panel .mobile-ctas{margin-top:auto;display:flex;flex-direction:column;gap:12px;padding-top:24px;}
 .hero-wrap{position:relative;overflow:hidden;}
 .hero-media{position:absolute;inset:0;background-image:url(images/hero.jpg);background-size:cover;background-position:center 35%;}
+@media (max-width:640px){
+  .hero-media{background-position:65% 15%;}
+}
 .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg, rgba(20,18,14,.72) 0%, rgba(20,18,14,.56) 45%, rgba(20,18,14,.8) 100%);}
 .hero{position:relative;z-index:2;padding:156px 0 100px;}
 .hero-content{max-width:760px;}
