@@ -20,7 +20,7 @@
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Karla',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Karla',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:108px;}
 h1,h2,h3,h4{font-family:'Spectral',Georgia,serif;margin:0;font-weight:600;color:var(--ink);line-height:1.15;}
 p{margin:0;}
 a{color:var(--sage-dark);text-decoration:none;}
@@ -76,6 +76,10 @@ button{font-family:inherit;cursor:pointer;background:none;border:none;color:inhe
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px;}
 .hero-content .btn-outline{border-color:rgba(255,255,255,.55);}
 .hero-content .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.12);}
+.hero-badge{max-width:100%;font-size:0.85rem;}
+@media (max-width:480px){
+  .hero-badge{white-space:normal;font-size:clamp(.62rem,3.4vw,.85rem);line-height:1.35;}
+}
 .hero-facts{display:flex;flex-wrap:wrap;gap:28px;margin-top:44px;padding-top:32px;border-top:1px solid var(--line);}
 .fact{display:flex;align-items:center;gap:12px;}
 .fact-icon{width:42px;height:42px;border-radius:50%;background:var(--sage-light);color:var(--sage-dark);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
@@ -178,7 +182,7 @@ button{font-family:inherit;cursor:pointer;background:none;border:none;color:inhe
 
 <header class="hero">
   <div class="container hero-content">
-      <span class="eyebrow" style="font-style: normal; font-weight: 800; font-size: 0.85rem; background-color: #D7A8802E; fill: #D7A8802E; color: #EFD13A; width: 740px; height: 78px; text-align: center; font-family: Helvetica">Kinesiología deportiva y rehabilitación · Cerro de las Rosas, Córdoba</span>
+      <span class="eyebrow hero-badge" style="font-style: normal; font-weight: 800; background-color: #D7A8802E; fill: #D7A8802E; color: #EFD13A; text-align: center; font-family: Helvetica">Kinesiología deportiva y rehabilitación · Cerro de las Rosas, Córdoba</span>
       <h1 class="h1" style="margin-top: 20px; font-size: 56px">Volvé a moverte sin dolor.</h1>
       <p class="lede" style="margin-top: 20px; font-size: 1.5rem; max-width: 60.4ch; opacity: 0.97; border-radius: 1px">En Recupera combinamos kinesiología deportiva, rehabilitación traumatológica y un trato cercano para que vuelvas a entrenar, dormir bien y hacer tu día a día sin molestias.</p>
       <div class="hero-actions">
