@@ -147,17 +147,15 @@
     event.preventDefault();
     if (sending) return;
 
-    /* La tabla `leads` tiene solo: id, nombre, telefono, email, mensaje.
-       No existe la columna `servicio`, y PostgREST rechaza el INSERT entero
-       (PGRST204) si se le manda una columna que no está en el esquema, así que
-       no se envía. Para registrarla, en Supabase:
-         alter table leads add column servicio text;
-       y agregar `servicio: SERVICIO` a este objeto. */
+    /* Columnas de `leads`: id, nombre, telefono, email, servicio_interes,
+       mensaje, fecha_creacion, estado. `id`, `fecha_creacion` y `estado` tienen
+       default y se completan solas, así que no se envían. */
     var data = {
       nombre: (formEl.elements.nombre.value || '').trim(),
       telefono: (formEl.elements.telefono.value || '').trim(),
       email: (formEl.elements.email.value || '').trim(),
-      mensaje: (formEl.elements.mensaje.value || '').trim()
+      mensaje: (formEl.elements.mensaje.value || '').trim(),
+      servicio_interes: SERVICIO
     };
 
     var invalid = REQUIRED.filter(function (name) { return !data[name]; });
