@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evaluación inicial — Recupera Kinesiología, Cerro de las Rosas</title>
+<meta name="description" content="Reservá tu evaluación inicial de kinesiología en Cerro de las Rosas, Córdoba. Salís con un diagnóstico claro y un plan de tratamiento a medida. Desde $12.000.">
+<link rel="icon" href="images/logo.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Evaluación inicial — Recupera Kinesiología">
+<meta property="og:description" content="Antes de tratar, entendemos qué te pasa. Reservá tu evaluación inicial y salí con un diagnóstico y un plan a medida.">
+<meta property="og:image" content="images/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF6EF; --bg-alt:#F2EBDD; --surface:#FFFFFF;
+  --ink:#2B2A28; --ink-muted:#6E685F;
+  --sage:#7C9473; --sage-dark:#5F7857; --sage-light:#E7EEDF;
+  --coral:#E2795A; --coral-dark:#C4603F;
+  --line:#E7DFCC;
+  --hero-bg:#211E19;
+  --on-media:rgba(255,255,255,.88); --on-media-line:rgba(255,255,255,.55); --on-media-active:#FBD8AE;
+  --footer-bg:#33392F; --footer-ink:#EDEAE1; --footer-ink-muted:#C9C7BC; --footer-ink-dim:#9C9A90;
+  --whatsapp:#25D366; --whatsapp-dark:#1E9E52;
+  --shadow-soft:0 20px 45px -25px rgba(60,50,35,.35);
+  --shadow-card:0 16px 32px -28px rgba(60,50,35,.4);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Karla',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+h1,h2,h3{font-family:'Spectral',Georgia,serif;margin:0;font-weight:600;line-height:1.15;}
+p{margin:0;}
+a{color:var(--sage-dark);text-decoration:none;}
+a:hover{color:var(--coral-dark);}
+img{max-width:100%;}
+svg{display:block;}
+input,textarea,button{font:inherit;color:inherit;}
+::placeholder{color:#A79F90;opacity:1;}
+:focus-visible{outline:3px solid var(--sage);outline-offset:2px;}
+
+.ev-container{max-width:1120px;margin:0 auto;padding:0 20px;}
+.ev-eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.68rem;color:var(--sage-dark);background:var(--sage-light);padding:7px 15px;border-radius:999px;}
+.ev-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:15px 30px;border-radius:999px;font-weight:700;font-size:.98rem;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,border-color .15s ease,color .15s ease;}
+.ev-btn:hover{transform:translateY(-2px);}
+.ev-btn--accent{background:var(--coral);color:#fff;}
+.ev-btn--accent:hover{background:var(--coral-dark);color:#fff;}
+.ev-btn--white{background:#fff;color:var(--sage-dark);}
+.ev-btn--white:hover{color:var(--sage-dark);}
+.ev-btn--wa{min-height:48px;padding:13px 24px;background:var(--whatsapp);color:#fff;}
+.ev-btn--wa:hover{background:var(--whatsapp-dark);color:#fff;}
+.ev-btn--outline{min-height:44px;padding:11px 20px;font-weight:600;font-size:.92rem;border-color:var(--line);background:#fff;color:var(--ink);}
+.ev-btn--outline:hover{border-color:var(--sage);color:var(--sage-dark);}
+
+/* Header */
+.ev-bar{position:fixed;top:0;left:0;right:0;z-index:40;border-bottom:1px solid transparent;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease;}
+.ev-bar__inner{max-width:1120px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.ev-bar__logo{height:44px;width:auto;display:block;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35));transition:filter .35s ease;}
+.ev-bar__cta{display:inline-flex;align-items:center;min-height:44px;padding:10px 20px;border-radius:999px;font-weight:700;font-size:.88rem;color:#fff;background:rgba(255,255,255,.14);border:1px solid var(--on-media-line);transition:transform .15s ease,background .35s ease,border-color .35s ease;}
+.ev-bar__cta:hover{transform:translateY(-2px);color:#fff;}
+.ev-bar--solid{background:rgba(250,246,239,.92);backdrop-filter:blur(10px);border-bottom-color:var(--line);}
+.ev-bar--solid .ev-bar__logo{filter:none;}
+.ev-bar--solid .ev-bar__cta{background:var(--coral);border-color:transparent;}
+
+/* Hero */
+.ev-hero{position:relative;overflow:hidden;background:var(--hero-bg);}
+.ev-hero__img{position:absolute;top:-7%;left:0;right:0;height:114%;background-image:url(images/hero.jpg);background-size:cover;background-position:center 34%;will-change:transform;}
+.ev-hero__scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,14,.72) 0%,rgba(20,18,14,.56) 42%,rgba(20,18,14,.88) 100%);}
+.ev-hero__glow{position:absolute;inset:0;background:radial-gradient(85% 60% at 16% 28%,rgba(124,148,115,.30) 0%,rgba(20,18,14,0) 72%);}
+.ev-hero__grid{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:112px 20px 72px;display:grid;gap:44px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:center;}
+.ev-hero__title{font-size:clamp(2.1rem,calc(4.5vw + 1rem),3.4rem);color:#fff;margin:18px 0 0;text-wrap:pretty;}
+.ev-hero__lede{font-size:1.05rem;color:var(--on-media);max-width:52ch;margin:18px 0 0;}
+.ev-hero__actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:28px;}
+.ev-price{display:inline-flex;align-items:baseline;gap:8px;color:#fff;}
+.ev-price b{font-family:'Spectral',Georgia,serif;font-weight:600;font-size:1.5rem;}
+.ev-price span{color:rgba(255,255,255,.75);font-size:.86rem;}
+.ev-checklist{list-style:none;padding:0;margin:30px 0 0;display:flex;flex-direction:column;gap:12px;}
+.ev-checklist li{display:flex;align-items:flex-start;gap:12px;color:rgba(255,255,255,.9);font-size:.95rem;}
+.ev-checklist span{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:rgba(231,238,223,.16);border:1px solid rgba(255,255,255,.32);display:inline-flex;align-items:center;justify-content:center;}
+.ev-figure{justify-self:center;width:100%;max-width:430px;}
+.ev-figure__frame{position:relative;border-radius:28px;padding:10px;background:linear-gradient(155deg,var(--sage-light),var(--coral));box-shadow:0 30px 60px -30px rgba(20,18,14,.85);}
+.ev-figure__frame img{display:block;width:100%;height:clamp(250px,40vw,360px);object-fit:cover;border-radius:18px;}
+.ev-figure__badge{position:absolute;left:-12px;bottom:20px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:13px 18px;box-shadow:0 16px 32px -22px rgba(60,50,35,.6);animation:ev-float 6s ease-in-out infinite;}
+.ev-figure__badge b{display:block;font-family:'Spectral',Georgia,serif;font-size:1.05rem;line-height:1.2;}
+.ev-figure__badge span{color:var(--ink-muted);font-size:.82rem;}
+
+/* Franja de confianza */
+.ev-strip{background:var(--bg);border-bottom:1px solid var(--line);}
+.ev-strip__inner{max-width:1120px;margin:0 auto;padding:20px;display:flex;flex-wrap:wrap;gap:16px 34px;}
+.ev-strip__item{display:flex;align-items:center;gap:12px;}
+.ev-strip__icon{width:42px;height:42px;border-radius:50%;background:var(--sage-light);flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;}
+.ev-strip__item b{display:block;font-family:'Spectral',Georgia,serif;font-size:1.02rem;line-height:1.25;}
+.ev-strip__item small{color:var(--ink-muted);font-size:.85rem;}
+
+/* Secciones */
+.ev-section{padding:64px 0;}
+.ev-section--alt{background:var(--bg-alt);}
+.ev-section__head{max-width:620px;margin:0 0 40px;}
+.ev-section__title{font-size:clamp(1.6rem,calc(2.6vw + 1rem),2.2rem);margin:16px 0 0;text-wrap:pretty;}
+.ev-section__lede{font-size:1.05rem;color:var(--ink-muted);margin:14px 0 0;max-width:56ch;}
+
+.ev-cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));}
+.ev-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow-card);display:flex;flex-direction:column;gap:14px;transition:transform .22s ease,box-shadow .22s ease;}
+.ev-card:hover{transform:translateY(-4px);box-shadow:0 26px 46px -26px rgba(60,50,35,.5);}
+.ev-card--tinted{background:linear-gradient(160deg,var(--sage-light),#ffffff 60%);}
+.ev-card__icon{width:48px;height:48px;border-radius:14px;background:var(--sage-light);display:inline-flex;align-items:center;justify-content:center;}
+.ev-card--tinted .ev-card__icon{background:#fff;}
+.ev-card h3{font-size:1.08rem;}
+.ev-card p{color:var(--ink-muted);font-size:.94rem;}
+
+/* Reserva */
+.ev-booking{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start;}
+.ev-form-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(24px,4vw,34px);box-shadow:var(--shadow-soft);}
+.ev-form-card h2{font-size:clamp(1.5rem,calc(2.2vw + 1rem),2rem);margin:14px 0 0;}
+.ev-form-card__lede{color:var(--ink-muted);margin:10px 0 0;font-size:.98rem;}
+.ev-form{display:flex;flex-direction:column;gap:16px;margin-top:24px;}
+.ev-field{display:flex;flex-direction:column;gap:7px;}
+.ev-field__label{font-weight:600;font-size:.9rem;}
+.ev-req{color:var(--coral-dark);}
+.ev-opt{color:var(--ink-muted);font-weight:400;}
+.ev-input{min-height:50px;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:var(--bg);outline:none;font-size:1rem;transition:border-color .15s ease,box-shadow .15s ease,background .15s ease;}
+textarea.ev-input{min-height:0;resize:vertical;}
+.ev-input:focus{border-color:var(--sage);background:#fff;box-shadow:0 0 0 4px rgba(124,148,115,.18);}
+.ev-input[aria-invalid="true"]{border-color:var(--coral-dark);}
+.ev-error{color:var(--coral-dark);font-size:.85rem;font-weight:600;}
+.ev-form__note{color:var(--ink-muted);font-size:.84rem;display:flex;align-items:flex-start;gap:8px;}
+.ev-form__note svg{flex:0 0 auto;margin-top:3px;}
+.ev-success{display:flex;flex-direction:column;gap:14px;align-items:flex-start;animation:ev-pop .4s ease both;}
+.ev-success:focus{outline:none;}
+.ev-success__icon{width:56px;height:56px;border-radius:16px;background:var(--sage-light);display:inline-flex;align-items:center;justify-content:center;}
+.ev-success h2{font-size:1.6rem;}
+.ev-success p{color:var(--ink-muted);}
+
+.ev-aside{display:flex;flex-direction:column;gap:20px;}
+.ev-aside-card{background:var(--bg-alt);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:14px;}
+.ev-aside-card h3{font-size:1.05rem;}
+.ev-aside-card p{color:var(--ink-muted);font-size:.93rem;}
+.ev-aside-card__links{display:flex;flex-wrap:wrap;gap:10px;}
+.ev-aside-card__meta{color:var(--ink-muted);font-size:.84rem;}
+.ev-place{border-radius:22px;overflow:hidden;position:relative;min-height:230px;display:flex;align-items:flex-end;}
+.ev-place img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.ev-place__scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,14,.35) 0%,rgba(20,18,14,.82) 100%);}
+.ev-place__body{position:relative;padding:22px;color:#fff;}
+.ev-place__body b{display:block;font-family:'Spectral',Georgia,serif;font-size:1.15rem;}
+.ev-place__body span{color:rgba(255,255,255,.85);font-size:.9rem;}
+
+/* Testimonios y cierre */
+.ev-quotes{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.ev-quote{margin:0;background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 28px;display:flex;flex-direction:column;gap:14px;}
+.ev-quote p{font-family:'Spectral',Georgia,serif;font-style:italic;font-size:1.12rem;line-height:1.45;}
+.ev-quote footer{font-weight:700;font-size:.88rem;color:var(--ink-muted);}
+.ev-closing{margin-top:32px;border-radius:32px;background:linear-gradient(135deg,var(--sage),var(--sage-dark));color:#fff;padding:clamp(34px,5vw,52px) 28px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;box-shadow:var(--shadow-soft);}
+.ev-closing h2{font-size:clamp(1.6rem,calc(2.6vw + 1rem),2.2rem);color:#fff;}
+.ev-closing p{color:rgba(255,255,255,.86);max-width:48ch;}
+
+/* Footer y FAB */
+.ev-footer{background:var(--footer-bg);color:var(--footer-ink);padding:44px 0 108px;}
+.ev-footer__inner{max-width:1120px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;}
+.ev-footer img{height:42px;width:auto;display:block;}
+.ev-footer__meta{color:var(--footer-ink-muted);font-size:.9rem;}
+.ev-footer__meta a{color:var(--footer-ink);display:inline-block;padding:8px 0;}
+.ev-footer__meta a:hover{color:#fff;}
+.ev-footer__legal{color:var(--footer-ink-dim);font-size:.82rem;}
+.ev-fab{position:fixed;right:20px;bottom:20px;z-index:45;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:14px 24px;border-radius:999px;background:var(--coral);color:#fff;font-weight:700;font-size:.95rem;box-shadow:0 18px 34px -18px rgba(20,18,14,.7);opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .3s ease,transform .3s ease;}
+.ev-fab.is-visible{opacity:1;transform:translateY(0);pointer-events:auto;}
+.ev-fab.is-visible:hover{transform:translateY(-2px);color:#fff;}
+
+/* Animaciones */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--reveal-delay,0ms);}
+.reveal.is-visible{opacity:1;transform:none;}
+@keyframes ev-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes ev-pulse{0%{box-shadow:0 0 0 0 rgba(226,121,90,.40)}70%{box-shadow:0 0 0 18px rgba(226,121,90,0)}100%{box-shadow:0 0 0 0 rgba(226,121,90,0)}}
+@keyframes ev-pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+.ev-hero__cta{animation:ev-pulse 3.2s ease-out 1.6s 3;}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;transition:none !important;}
+  html{scroll-behavior:auto;}
+  .reveal{opacity:1;transform:none;}
+}
+</style>
+</head>
+<body>
+
+<header class="ev-bar" id="evBar">
+  <div class="ev-bar__inner">
+    <img class="ev-bar__logo" src="images/logo.png" alt="Recupera — Kinesiología y Rehabilitación" width="44" height="44">
+    <a class="ev-bar__cta" href="#reservar">Reservar evaluación</a>
+  </div>
+</header>
+
+<main>
+<section class="ev-hero">
+  <div class="ev-hero__img" id="evHeroImg"></div>
+  <div class="ev-hero__scrim"></div>
+  <div class="ev-hero__glow"></div>
+
+  <div class="ev-hero__grid">
+    <div>
+      <span class="ev-eyebrow reveal">Evaluación inicial</span>
+      <h1 class="ev-hero__title reveal" style="--reveal-delay:60ms">Antes de tratar,<br>entendemos qué te pasa.</h1>
+      <p class="ev-hero__lede reveal" style="--reveal-delay:120ms">La evaluación inicial es el primer paso: escuchamos tu caso, revisamos cómo te movés y salís con un diagnóstico y un plan de tratamiento a medida. Sin eso, cualquier sesión es a ciegas.</p>
+
+      <div class="ev-hero__actions reveal" style="--reveal-delay:180ms">
+        <a class="ev-btn ev-btn--accent ev-hero__cta" href="#reservar">
+          Reservar evaluación
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </a>
+        <span class="ev-price"><b>$12.000</b><span>valor de referencia</span></span>
+      </div>
+
+      <ul class="ev-checklist reveal" style="--reveal-delay:240ms">
+        <li><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FBD8AE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Charlamos de lo que te duele y de lo que querés volver a hacer.</li>
+        <li><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FBD8AE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Evaluamos tu movilidad, tu postura y el origen del dolor.</li>
+        <li><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FBD8AE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Te llevás un plan de tratamiento a medida, con tiempos claros.</li>
+      </ul>
+    </div>
+
+    <div class="ev-figure reveal" style="--reveal-delay:200ms">
+      <div class="ev-figure__frame">
+        <img src="images/feature.jpg" alt="Kinesiólogo evaluando la movilidad de una paciente">
+        <div class="ev-figure__badge">
+          <b>Desde 2019</b>
+          <span>atendiendo en el barrio</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ev-strip">
+  <div class="ev-strip__inner">
+    <div class="ev-strip__item reveal">
+      <span class="ev-strip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-6.5-3.9-6.5-8.6A3.9 3.9 0 0 1 12 8.6a3.9 3.9 0 0 1 6.5 2.8C18.5 16.1 12 20 12 20z"></path></svg></span>
+      <span><b>3 kinesiólogos</b><small>equipo chico y especializado</small></span>
+    </div>
+    <div class="ev-strip__item reveal" style="--reveal-delay:80ms">
+      <span class="ev-strip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+      <span><b>Lunes a sábado</b><small>respondemos por WhatsApp</small></span>
+    </div>
+    <div class="ev-strip__item reveal" style="--reveal-delay:160ms">
+      <span class="ev-strip__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-10a7 7 0 1 1 14 0c0 4.5-7 10-7 10z"></path><circle cx="12" cy="11" r="2.5"></circle></svg></span>
+      <span><b>Cerro de las Rosas</b><small>Av. Rafael Núñez 3.850</small></span>
+    </div>
+  </div>
+</div>
+
+<section class="ev-section ev-section--alt">
+  <div class="ev-container">
+    <div class="ev-section__head reveal">
+      <span class="ev-eyebrow">Por qué empezar acá</span>
+      <h2 class="ev-section__title">Una hora que te ahorra meses de probar</h2>
+      <p class="ev-section__lede">Hablamos en tu idioma: del resultado que buscás —volver a entrenar, dormir sin dolor de espalda, subir escaleras sin miedo— y no solo del procedimiento.</p>
+    </div>
+    <div class="ev-cards">
+      <div class="ev-card reveal">
+        <span class="ev-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg></span>
+        <h3>Sabés qué tenés</h3>
+        <p>Un diagnóstico claro, explicado sin vueltas clínicas, en la primera consulta.</p>
+      </div>
+      <div class="ev-card reveal" style="--reveal-delay:80ms">
+        <span class="ev-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="3"></rect><path d="M8 3v4M16 3v4M3.5 10h17"></path></svg></span>
+        <h3>Plan y tiempos</h3>
+        <p>Cuántas sesiones, con qué frecuencia y qué esperar en cada etapa.</p>
+      </div>
+      <div class="ev-card reveal" style="--reveal-delay:160ms">
+        <span class="ev-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-6.5-3.9-6.5-8.6A3.9 3.9 0 0 1 12 8.6a3.9 3.9 0 0 1 6.5 2.8C18.5 16.1 12 20 12 20z"></path></svg></span>
+        <h3>Un trato cercano</h3>
+        <p>Somos un equipo chico: nos vamos a conocer por tu nombre, no por un número de turno.</p>
+      </div>
+      <div class="ev-card ev-card--tinted reveal" style="--reveal-delay:240ms">
+        <span class="ev-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4c3 3 5 5.5 5 8.5A5 5 0 0 1 7 12.5C7 9.5 9 7 12 4z"></path></svg></span>
+        <h3>Seguís por donde te sirve</h3>
+        <p>Kinesiología deportiva, rehabilitación traumatológica, RPG o drenaje: lo elegimos después de verte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ev-section" id="reservar" style="scroll-margin-top:76px">
+  <div class="ev-container ev-booking">
+
+    <div class="ev-form-card reveal">
+      <div id="evFormPanel">
+        <span class="ev-eyebrow">Reservar</span>
+        <h2>Coordiná tu evaluación inicial</h2>
+        <p class="ev-form-card__lede">Dejanos tus datos y te escribimos para darte un turno. Sin compromiso.</p>
+
+        <form class="ev-form" id="evForm" novalidate>
+          <label class="ev-field">
+            <span class="ev-field__label">Nombre <span class="ev-req">*</span></span>
+            <input class="ev-input" name="nombre" type="text" required autocomplete="name" placeholder="Cómo te llamás" aria-invalid="false" aria-describedby="evError-nombre">
+            <span class="ev-error" id="evError-nombre" hidden>Necesitamos tu nombre para agendarte.</span>
+          </label>
+          <label class="ev-field">
+            <span class="ev-field__label">Teléfono <span class="ev-req">*</span></span>
+            <input class="ev-input" name="telefono" type="tel" required inputmode="tel" autocomplete="tel" placeholder="351 555-0182" aria-invalid="false" aria-describedby="evError-telefono">
+            <span class="ev-error" id="evError-telefono" hidden>Dejanos un teléfono: te escribimos por ahí.</span>
+          </label>
+          <label class="ev-field">
+            <span class="ev-field__label">Email <span class="ev-opt">(opcional)</span></span>
+            <input class="ev-input" name="email" type="email" inputmode="email" autocomplete="email" placeholder="tucorreo@mail.com">
+          </label>
+          <label class="ev-field">
+            <span class="ev-field__label">Motivo de consulta <span class="ev-opt">(opcional)</span></span>
+            <textarea class="ev-input" name="mensaje" rows="4" placeholder="Contanos qué te pasa y desde cuándo"></textarea>
+          </label>
+          <div aria-live="polite">
+            <p class="ev-error" id="evFormError" hidden>Revisá los campos marcados y volvé a enviar.</p>
+          </div>
+          <button class="ev-btn ev-btn--accent" type="submit">
+            Reservar evaluación inicial
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </button>
+          <p class="ev-form__note"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8h.01"></path></svg>Evaluación inicial $12.000. Los valores son de referencia y pueden actualizarse.</p>
+        </form>
+      </div>
+
+      <div class="ev-success" id="evSuccess" tabindex="-1" hidden>
+        <span class="ev-success__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
+        <h2>Listo, <span id="evSuccessName"></span>. Recibimos tu pedido.</h2>
+        <p>Te escribimos al teléfono que dejaste para coordinar el día y el horario de tu evaluación inicial. Si preferís adelantarlo, escribinos por WhatsApp.</p>
+        <a class="ev-btn ev-btn--wa" href="https://wa.me/5493515550182" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="ev-aside">
+      <div class="ev-aside-card reveal" style="--reveal-delay:80ms">
+        <h3>¿Preferís no completar el formulario?</h3>
+        <p>Escribinos directo y coordinamos por ahí. Respondemos de lunes a sábado.</p>
+        <div class="ev-aside-card__links">
+          <a class="ev-btn ev-btn--outline" href="https://wa.me/5493515550182" target="_blank" rel="noopener">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            WhatsApp
+          </a>
+          <a class="ev-btn ev-btn--outline" href="mailto:hola@recuperakine.com.ar">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#5F7857" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="m4 7 8 6 8-6"></path></svg>
+            Email
+          </a>
+        </div>
+        <p class="ev-aside-card__meta">+54 9 351 555-0182 · hola@recuperakine.com.ar</p>
+      </div>
+
+      <div class="ev-place reveal" style="--reveal-delay:160ms">
+        <img src="images/contacto-hero.jpg" alt="Consultorio de Recupera en Cerro de las Rosas">
+        <div class="ev-place__scrim"></div>
+        <div class="ev-place__body">
+          <b>Av. Rafael Núñez 3.850</b>
+          <span>Cerro de las Rosas, Córdoba · Lunes a viernes 8:00–20:00, sábados 9:00–13:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ev-section ev-section--alt">
+  <div class="ev-container">
+    <div class="ev-section__head reveal" style="max-width:560px;margin-bottom:32px">
+      <span class="ev-eyebrow">Pacientes</span>
+      <h2 class="ev-section__title">Resultados que se sienten</h2>
+    </div>
+    <div class="ev-quotes">
+      <blockquote class="ev-quote reveal">
+        <svg width="30" height="24" viewBox="0 0 30 24" fill="#E2795A" aria-hidden="true"><path d="M0 24V13.2C0 5.9 4 1.2 11.3 0l1.3 3.6C8.4 4.9 6.4 7.3 6.4 10.6h4.9V24H0zm17.4 0V13.2C17.4 5.9 21.4 1.2 28.7 0L30 3.6c-4.2 1.3-6.2 3.7-6.2 7h4.9V24H17.4z"></path></svg>
+        <p>Después de la lesión de rodilla pensé que no iba a volver a correr. En 3 meses con RPG volví a entrenar.</p>
+        <footer>— Paciente de Recupera</footer>
+      </blockquote>
+      <blockquote class="ev-quote reveal" style="--reveal-delay:100ms">
+        <svg width="30" height="24" viewBox="0 0 30 24" fill="#E2795A" aria-hidden="true"><path d="M0 24V13.2C0 5.9 4 1.2 11.3 0l1.3 3.6C8.4 4.9 6.4 7.3 6.4 10.6h4.9V24H0zm17.4 0V13.2C17.4 5.9 21.4 1.2 28.7 0L30 3.6c-4.2 1.3-6.2 3.7-6.2 7h4.9V24H17.4z"></path></svg>
+        <p>La atención es súper cercana, nunca sentís que sos un número más.</p>
+        <footer>— Paciente de Recupera</footer>
+      </blockquote>
+    </div>
+
+    <div class="ev-closing reveal" style="--reveal-delay:120ms">
+      <h2>¿Arrancamos con tu recuperación?</h2>
+      <p>Nos tomamos el tiempo de escucharte. Reservá tu evaluación inicial y salimos con un plan.</p>
+      <a class="ev-btn ev-btn--white" href="#reservar">Reservar evaluación</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ev-footer">
+  <div class="ev-footer__inner">
+    <img src="images/logo.png" alt="Recupera" width="42" height="42">
+    <span class="ev-footer__meta">Av. Rafael Núñez 3.850 · Cerro de las Rosas, Córdoba · <a href="https://wa.me/5493515550182" target="_blank" rel="noopener">+54 9 351 555-0182</a></span>
+    <span class="ev-footer__legal">© 2026 Recupera — Kinesiología y Rehabilitación</span>
+  </div>
+</footer>
+
+<a class="ev-fab" id="evFab" href="#reservar">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="3"></rect><path d="M8 3v4M16 3v4M3.5 10h17"></path></svg>
+  Reservar $12.000
+</a>
+
+<script src="js/evaluacion-inicial.js" defer></script>
+</body>
+</html>
