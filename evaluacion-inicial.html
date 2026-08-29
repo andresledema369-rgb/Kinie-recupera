@@ -29,6 +29,11 @@
   --shadow-card:0 16px 32px -28px rgba(60,50,35,.4);
 }
 *{box-sizing:border-box;}
+/* El atributo `hidden` solo funciona por la regla [hidden]{display:none} del
+   navegador, y cualquier `display` de autor la pisa por origen en la cascada.
+   Los paneles de éxito y de fallo usan display:flex, así que sin esto se ven
+   al cargar la página pese a tener el atributo. */
+[hidden]{display:none !important;}
 html{scroll-behavior:smooth;}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Karla',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
 h1,h2,h3{font-family:'Spectral',Georgia,serif;margin:0;font-weight:600;line-height:1.15;}
