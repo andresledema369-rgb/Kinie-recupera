@@ -32,7 +32,9 @@
 
       if (bar) bar.classList.toggle('ev-bar--solid', y > 40);
 
-      if (heroImg && !reduceMotion && y < window.innerHeight * 1.2) {
+      /* Sin parallax en móvil: ahí la foto arranca en top:0 y desplazarla
+         destaparía el borde superior. */
+      if (heroImg && !reduceMotion && window.innerWidth > 640 && y < window.innerHeight * 1.2) {
         heroImg.style.transform = 'translateY(' + (y * 0.16).toFixed(1) + 'px)';
       }
 

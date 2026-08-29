@@ -69,7 +69,7 @@ input,textarea,button{font:inherit;color:inherit;}
 .ev-hero__img{position:absolute;top:-7%;left:0;right:0;height:114%;background-image:url(images/hero.jpg);background-size:cover;background-position:center 34%;will-change:transform;}
 .ev-hero__scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,14,.72) 0%,rgba(20,18,14,.56) 42%,rgba(20,18,14,.88) 100%);}
 .ev-hero__glow{position:absolute;inset:0;background:radial-gradient(85% 60% at 16% 28%,rgba(124,148,115,.30) 0%,rgba(20,18,14,0) 72%);}
-.ev-hero__grid{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:112px 20px 72px;display:grid;gap:44px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:center;}
+.ev-hero__grid{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:112px 20px 72px;display:grid;gap:44px;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));align-items:center;}
 .ev-hero__title{font-size:clamp(2.1rem,calc(4.5vw + 1rem),3.4rem);color:#fff;margin:18px 0 0;text-wrap:pretty;}
 .ev-hero__lede{font-size:1.05rem;color:var(--on-media);max-width:52ch;margin:18px 0 0;}
 .ev-hero__actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:28px;}
@@ -86,6 +86,27 @@ input,textarea,button{font:inherit;color:inherit;}
 .ev-figure__badge b{display:block;font-family:'Spectral',Georgia,serif;font-size:1.05rem;line-height:1.2;}
 .ev-figure__badge span{color:var(--ink-muted);font-size:.82rem;}
 
+/* Hero en móvil: al apilarse las columnas la sección queda muy alta y la foto
+   apaisada (1600x893) perdía el encuadre — con cover solo se veía un 16% de su
+   ancho. Se la acota a una franja superior, con el mismo anclaje horizontal que
+   usa index.html, y se funde con el fondo oscuro. */
+@media (max-width:640px){
+  .ev-hero__grid{padding:92px 20px 44px;gap:28px;}
+  .ev-hero__img{
+    top:0;height:clamp(300px,44vh,380px);
+    background-position:52.5% top;
+    -webkit-mask-image:linear-gradient(180deg,#000 58%,rgba(0,0,0,0) 100%);
+    mask-image:linear-gradient(180deg,#000 58%,rgba(0,0,0,0) 100%);
+  }
+  .ev-hero__scrim{background:linear-gradient(180deg,rgba(20,18,14,.62) 0%,rgba(20,18,14,.42) 26%,rgba(20,18,14,.86) 62%,rgba(20,18,14,.94) 100%);}
+  .ev-hero__title{font-size:clamp(1.75rem,7vw,2.3rem);margin-top:14px;}
+  .ev-hero__lede{font-size:1rem;margin-top:12px;}
+  .ev-hero__actions{margin-top:20px;gap:12px;}
+  .ev-checklist{margin-top:22px;}
+  .ev-figure__frame{padding:8px;border-radius:22px;}
+  .ev-figure__badge{left:auto;right:12px;bottom:12px;}
+}
+
 /* Franja de confianza */
 .ev-strip{background:var(--bg);border-bottom:1px solid var(--line);}
 .ev-strip__inner{max-width:1120px;margin:0 auto;padding:20px;display:flex;flex-wrap:wrap;gap:16px 34px;}
@@ -101,7 +122,7 @@ input,textarea,button{font:inherit;color:inherit;}
 .ev-section__title{font-size:clamp(1.6rem,calc(2.6vw + 1rem),2.2rem);margin:16px 0 0;text-wrap:pretty;}
 .ev-section__lede{font-size:1.05rem;color:var(--ink-muted);margin:14px 0 0;max-width:56ch;}
 
-.ev-cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));}
+.ev-cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(228px,100%),1fr));}
 .ev-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow-card);display:flex;flex-direction:column;gap:14px;transition:transform .22s ease,box-shadow .22s ease;}
 .ev-card:hover{transform:translateY(-4px);box-shadow:0 26px 46px -26px rgba(60,50,35,.5);}
 .ev-card--tinted{background:linear-gradient(160deg,var(--sage-light),#ffffff 60%);}
@@ -111,7 +132,7 @@ input,textarea,button{font:inherit;color:inherit;}
 .ev-card p{color:var(--ink-muted);font-size:.94rem;}
 
 /* Reserva */
-.ev-booking{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start;}
+.ev-booking{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));align-items:start;}
 .ev-form-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(24px,4vw,34px);box-shadow:var(--shadow-soft);}
 .ev-form-card h2{font-size:clamp(1.5rem,calc(2.2vw + 1rem),2rem);margin:14px 0 0;}
 .ev-form-card__lede{color:var(--ink-muted);margin:10px 0 0;font-size:.98rem;}
@@ -147,7 +168,7 @@ textarea.ev-input{min-height:0;resize:vertical;}
 .ev-place__body span{color:rgba(255,255,255,.85);font-size:.9rem;}
 
 /* Testimonios y cierre */
-.ev-quotes{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.ev-quotes{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));}
 .ev-quote{margin:0;background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 28px;display:flex;flex-direction:column;gap:14px;}
 .ev-quote p{font-family:'Spectral',Georgia,serif;font-style:italic;font-size:1.12rem;line-height:1.45;}
 .ev-quote footer{font-weight:700;font-size:.88rem;color:var(--ink-muted);}
